@@ -1,0 +1,144 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+    justify-content: center;
+}
+
+header {
+    background-color: #fa0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #ff0000;
+    justify-content: center;
+}
+
+/* Estilos para a galeria */
+#galeria {
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-item {
+    flex: 1 1 calc(100% - 20px); /* Ajusta automaticamente para a largura da tela com margem */
+    max-width: 400px; /* Define um limite de largura para telas maiores */
+    height: 500px; /* Define uma altura fixa para garantir o mesmo tamanho */
+    box-sizing: border-box;
+    margin: 10px 10px;
+    border: 5px solid #f70202;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%; /* A imagem agora ocupa toda a altura do contêiner */
+    object-fit: contain; /* Mantém o aspecto da imagem sem esticar */
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos para a seção de compartilhamento de arte */
+#compartilhe-arte {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+}
+
+#compartilhe-arte h2 {
+    color: #ff0000;
+}
+
+#compartilhe-arte form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#compartilhe-arte label, #comentarios label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#compartilhe-arte input[type="text"], 
+#compartilhe-arte input[type="url"], 
+#compartilhe-arte input[type="file"], 
+#comentarios input[type="text"], 
+#comentarios textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#compartilhe-arte button, #comentarios button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#compartilhe-arte button:hover, #comentarios button:hover {
+    background-color: #ff0000;
+}
+
+/* Estilos para a seção de comentários */
+#comentarios {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+}
+
+#comentarios h2 {
+    color: #ff0000;
+}
+
+#comentarios-lista {
+    margin-top: 20px;
+}
+
+.comentario {
+    background-color: #f1f1f1;
+    border-left: 5px solid #ff0000;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
